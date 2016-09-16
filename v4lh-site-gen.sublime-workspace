@@ -519,6 +519,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 729,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 1744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "contact.html",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-07-21-leith-hill-place-picnic-day.markdown",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1175,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/clean-blog.less",
+			"settings":
+			{
+				"buffer_size": 7437,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -556,10 +604,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/julianeverett/Development/workspace/v4lh-site-gen"
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/_includes",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/_layouts",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/_posts",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/img",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/js",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/less"
 	],
 	"file_history":
 	[
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/img/VFLH-NT-VERSION14.jpg",
+		"/Users/julianeverett/Development/workspace/v4lh-site-gen/img/post-bg-01.jpg",
+		"/usr/local/lib/node_modules/npm/.mailmap",
 		"/Users/julianeverett/Development/workspace/iet/iet-schemas/src/test/resources/examples/inspec2/inspec-item.xml",
 		"/Users/julianeverett/Development/workspace/iet/iet-schemas/src/test/resources/examples/inspec2/annotated-inspec-item.xml",
 		"/Users/julianeverett/Development/workspace/iet/iet-schemas/src/test/resources/examples/inspec2/CORE_Source_AccNum-1106742.xml",
@@ -684,14 +741,11 @@
 		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/test/data/stub-review.json",
 		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/js/picotypeahead.js",
 		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/test/data/stub-annotations-empty.json",
-		"/Users/julianeverett/.Trash/stub-annotations-empty.json",
-		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/bower_components/jquery/src/attributes/val.js",
-		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/js/picotreeselector.js",
-		"/Users/julianeverett/Development/workspace/cochrane/pico-annotator/app/js/picopopover.js"
+		"/Users/julianeverett/.Trash/stub-annotations-empty.json"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -730,6 +784,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"h1",
+			"80px",
+			"650",
+			"500",
+			"font-size",
 			"issn",
 			"affil",
 			"is\"",
@@ -852,12 +911,7 @@
 			"PicoAdapter(",
 			"PicoAdapter",
 			"getPicoOptions",
-			"picof",
-			"getValidLiteral",
-			"from",
-			"dose",
-			"dose-range",
-			"Quantity"
+			"picof"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -939,8 +993,188 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2016-07-21-leith-hill-place-picnic-day.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"file": "img/leith-hill-place.png",
+					"semi_transient": true,
+					"stack_index": 3,
+					"type": "image"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "less/clean-blog.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],

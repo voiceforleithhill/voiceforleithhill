@@ -249,6 +249,11 @@ hr.small {
     font-size: 36px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .video > .title {
+    font-size: 36px;
+  }
+}
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
