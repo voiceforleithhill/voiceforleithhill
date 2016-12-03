@@ -49,6 +49,12 @@ hr.small {
   border-width: 2px;
   border-color: white;
 }
+hr.spacer {
+  max-width: 300px;
+  margin: 55px auto;
+  border-width: 1px;
+  border-color: #808080;
+}
 em.approved {
   color: #f00;
 }
