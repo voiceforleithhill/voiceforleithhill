@@ -6,12 +6,12 @@
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #404040;
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 p a {
   text-decoration: underline;
@@ -32,6 +32,9 @@ a:hover,
 a:focus {
   color: #0085a1;
 }
+a.submission {
+  font-weight: 600;
+}
 a img:hover,
 a img:focus {
   cursor: zoom-in;
@@ -43,94 +46,53 @@ blockquote {
 hr.small {
   max-width: 100px;
   margin: 15px auto;
-  border-width: 4px;
+  border-width: 2px;
   border-color: white;
 }
+em.approved {
+  color: #f00;
+}
 .navbar-custom {
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: #726585;
+  min-height: 20px;
   width: 100%;
-  z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
 .navbar-custom .nav li a {
+  color: #ddd;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar-custom .navbar-collapse {
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #5800a2;
   }
   .navbar-custom .nav li a {
-    color: white;
-    padding: 20px;
+    padding: 3px 45px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .navbar-custom {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .navbar-custom.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-  .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .navbar-brand:hover,
-  .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
-  }
-  .navbar-custom.is-fixed .nav li a {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .nav li a:hover,
-  .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
-  }
-  .navbar-custom.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    color: #5800a2;
   }
 }
 .intro-header {
@@ -141,20 +103,12 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
   color: white;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
+  padding: 30px 0 20px;
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -167,18 +121,12 @@ hr.small {
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 10px 0 0;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading h1,
-  .intro-header .page-heading h1 {
-    font-size: 70px;
-  }
 }
 .intro-header .post-heading h1 {
   font-size: 35px;
@@ -203,14 +151,6 @@ hr.small {
 .intro-header .post-heading .meta a {
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .post-heading h1 {
-    font-size: 55px;
-  }
-  .intro-header .post-heading .subheading {
-    font-size: 30px;
-  }
-}
 .post-preview > a {
   color: #404040;
 }
@@ -220,18 +160,19 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 .post-preview > a > .post-subtitle {
+  font-size: 18px;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 18px;
+  font-size: 12px;
   font-style: italic;
   margin-top: 0;
 }
@@ -245,14 +186,14 @@ hr.small {
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 768px) {
   .video > .title {
     font-size: 36px;
   }
+}
+.avplayer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-heading {
   font-size: 36px;
@@ -270,7 +211,7 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 50px 0 65px;
+  padding: 0 0 20px 0;
 }
 footer .list-inline {
   margin: 0;
@@ -280,6 +221,14 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
+}
+.resource {
+  margin-left: auto;
+  margin-right: auto;
+}
+.resource a img {
+  margin: 20px;
+  display: inline-block;
 }
 .floating-label-form-group {
   font-size: 14px;
@@ -405,4 +354,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
 }

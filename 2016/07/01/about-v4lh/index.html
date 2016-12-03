@@ -40,8 +40,28 @@
 
 <body>
 
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <header class="intro-header" style="background-image: url('/img/banner.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <div class="post-heading">
+                
+                    <h1>A Voice For Leith Hill</h1>
+                    
+                    <h2 class="subheading">Who we are</h2>
+                    
+                    
+                    <span class="meta">Posted by Voice for Leith Hill on July 1, 2016</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -51,40 +71,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">A Voice For Leith Hill</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <li>
                     <a href="/">Home</a>
                 </li>
-                
-				
                 <li>
-                    <a href="/about/">About</a>
+                    <a href="/status">Current Status</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/contact/">Contact</a>
+                    <a href="/video">Videos</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/dates/">Timelines</a>
+                    <a href="/posters">Posters</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/video/">Videos</a>
+                    <a href="/about">About Us</a>
                 </li>
-				
-                
+                <li>
+                    <a href="/contact">Join Us</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -93,38 +102,43 @@
 </nav>
 
 
-    <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/banner.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>A Voice For Leith Hill</h1>
-                    
-                    <h2 class="subheading">Who we are</h2>
-                    
-                    <span class="meta">Posted by Voice for Leith Hill on July 1, 2016</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Post Content -->
+    <!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
 				<p>A Voice For Leith Hill (AVFLH) are a group of local artists, musicians and environmentalists who joined together to protest peacefully and raise awareness concerning the planned oil drilling on Leith Hill due to start later this year.</p>
 
-<p>The campaign originated at a picnic event on the planned drilling site in Bury Hill Woods last autumn, where participants decided on a plan of peaceful action through a series of art exhibitions and concerts aimed at raising awareness about the pending senseless destruction of one of the South of England's most beautiful and cherished natural habitats.</p>
+<p>The campaign originated at a picnic event on the planned drilling site in Bury Hill Woods in the autumn of 2015, where participants decided on a plan of peaceful action through a series of art exhibitions and concerts aimed at raising awareness about the pending senseless destruction of one of the South of England's most beautiful and cherished natural habitats.</p>
 
 <p>A travelling art exhibition celebrating the beauty of Leith Hill and highlighting the wildlife under threat commenced at The Star, Dorking in January 2016 where it remained until end of March. There was a successful opening event with local bands, guest speakers and many signatures added to our petition. During this time AVFLH also ran a stall in Dorking High Street with a big live street art demonstration.</p>
 
 <p>In April the exhibition was warmly welcomed at the newly refurbished Plough Inn, Coldharbour with a jam-packed opening event including the village bands, A Voice For Leith Hill musicians and speakers, a speech from the LHAG chairman and a talk about the ecology under threat.</p>
 
-<p>From 6th August to 30th October 2016, the exhibition will then be moving to Leith Hill Place. On Saturday 13th August from 12pm there will be a family launch event including live music, art activities, animal face painting and further talks. All are welcome. Please bring a picnic or else cream teas will be available in the house.</p>
+<p>From 6th August to 30th October 2016, the exhibition then moved to Leith Hill Place. On Saturday 13th August there was a family picnoic launch event that included live music, art activities and further talks. The following footage was taken during that day.</p>
+
+<div id="avplayer" class="avplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('avplayer', {
+      height: '315',
+      width: '560',
+      videoId: 'j7m4eS60Dnk'
+    });
+  }
+</script>
+
 
 
                 <hr>

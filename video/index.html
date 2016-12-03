@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Non-party political community group committed to raising awareness and protesting against the proposed oil exploration at Leith Hill">
 
-    <title>Videos - A Voice For Leith Hill</title>
+    <title>Video - A Voice For Leith Hill</title>
 
     <link rel="canonical" href="http://www.voiceforleithhill.co.uk/video/">
 
@@ -40,8 +40,27 @@
 
 <body>
 
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <header class="intro-header" style="background-image: url('/img/banner.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <div class="site-heading">
+                
+                    <h1>Video</h1>
+                    
+                    
+                    <hr class="small">
+                    <span class="subheading">Video related to the campaign</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -51,40 +70,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">A Voice For Leith Hill</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <li>
                     <a href="/">Home</a>
                 </li>
-                
-				
                 <li>
-                    <a href="/about/">About</a>
+                    <a href="/status">Current Status</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/contact/">Contact</a>
+                    <a href="/video">Videos</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/dates/">Timelines</a>
+                    <a href="/posters">Posters</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/video/">Videos</a>
+                    <a href="/about">About Us</a>
                 </li>
-				
-                
+                <li>
+                    <a href="/contact">Join Us</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -93,26 +101,52 @@
 </nav>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/banner.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Videos</h1>
-                    <hr class="small">
-                    <span class="subheading">Video related to the campaign</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Main Content -->
+    <!-- Main Content -->
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
+			<div id="avplayer1" class="avplayer"></div>
+<hr class="short">
+<div id="avplayer2" class="avplayer"></div>
+<hr class="short">
+<div id="avplayer3" class="avplayer"></div>
+<hr class="short">
+<div id="avplayer4" class="avplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('avplayer1', {
+      height: '315',
+      width: '560',
+      videoId: 'tGLJidCBlvk'
+    });
+    player = new YT.Player('avplayer2', {
+      height: '315',
+      width: '560',
+      videoId: 'lXvP-YZ3WNc'
+    });
+    player = new YT.Player('avplayer3', {
+      height: '315',
+      width: '560',
+      videoId: 'rKEgpOScfV4'
+    });
+    player = new YT.Player('avplayer4', {
+      height: '315',
+      width: '560',
+      videoId: 'j7m4eS60Dnk'
+    });
+  }
+</script>
+
 		</div>
 	</div>
 </div>
