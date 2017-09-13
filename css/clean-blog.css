@@ -229,6 +229,9 @@ em.approved {
   margin-top: 60px;
   font-weight: 700;
 }
+.footnote {
+  font-size: 14px;
+}
 .caption {
   text-align: center;
   font-size: 14px;
