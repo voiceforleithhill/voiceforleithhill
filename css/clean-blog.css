@@ -391,3 +391,14 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+#mc_embed_signup {
+  width: 520px;
+  margin: 30px auto;
+}
+#mc_embed_signup label {
+  font-size: 18px;
+  color: #726585;
+}
+#mc_embed_signup input {
+  margin-left: 7px;
+}
